@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>万博サンゴ研究 月次進捗報告 ― 2026年6月25日</title>
+<link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reset.css">
+<link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css">
+<link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/theme/white.css">
+<style>
+  :root {
+    --r-heading-font: 'Hiragino Sans', 'Yu Gothic', sans-serif;
+    --r-main-font:    'Hiragino Sans', 'Yu Gothic', sans-serif;
+    --r-heading-color: #1a4a6e;
+    --r-main-font-size: 22px;
+  }
+  .reveal h2 { font-size:1.05em; margin-bottom:0.2em; color:#1a4a6e; }
+  .reveal section { text-align:center; }
+  .reveal ul { text-align:left; margin-left:0.8em; }
+  .reveal li { margin-bottom:0.35em; line-height:1.55; }
+
+  /* 青ボックス：確認済み知見 */
+  .confirmed {
+    background:#e8f4fd; border-left:5px solid #1a7abf;
+    border-radius:6px; padding:0.55em 0.9em;
+    text-align:left; font-size:0.72em; line-height:1.7; color:#222;
+  }
+  .confirmed-title { color:#1a7abf; font-weight:bold; font-size:1.05em; margin-bottom:0.2em; }
+
+  /* 橙ボックス：記述のみ・要注意 */
+  .caution {
+    background:#fff8f0; border-left:5px solid #e07830;
+    border-radius:6px; padding:0.55em 0.9em;
+    text-align:left; font-size:0.72em; line-height:1.7; color:#222;
+  }
+  .caution-title { color:#e07830; font-weight:bold; font-size:1.05em; margin-bottom:0.2em; }
+
+  /* 緑ボックス：宿題回答 */
+  .hw-done {
+    background:#edf7ed; border-left:5px solid #2e8b57;
+    border-radius:6px; padding:0.55em 0.9em;
+    text-align:left; font-size:0.72em; line-height:1.7; color:#222;
+  }
+  .hw-title { color:#2e8b57; font-weight:bold; font-size:1.05em; margin-bottom:0.2em; }
+
+  /* グレーボックス：無効・限界 */
+  .invalid {
+    background:#f4f4f4; border-left:5px solid #999;
+    border-radius:6px; padding:0.55em 0.9em;
+    text-align:left; font-size:0.72em; line-height:1.7; color:#555;
+  }
+
+  /* テーブル共通 */
+  .mtg-table {
+    width:100%; border-collapse:collapse; font-size:0.68em;
+    text-align:left;
+  }
+  .mtg-table th {
+    background:#1a4a6e; color:#fff;
+    padding:0.45em 0.7em; font-weight:bold;
+  }
+  .mtg-table td { padding:0.45em 0.7em; border-bottom:1px solid #ddd; vertical-align:top; }
+  .mtg-table tr:nth-child(even) td { background:#f5f8fc; }
+
+  .tag-null  { background:#dc3545; color:#fff; border-radius:4px; padding:1px 6px; font-size:0.85em; }
+  .tag-desc  { background:#e07830; color:#fff; border-radius:4px; padding:1px 6px; font-size:0.85em; }
+  .tag-ok    { background:#2e8b57; color:#fff; border-radius:4px; padding:1px 6px; font-size:0.85em; }
+  .tag-warn  { background:#999;    color:#fff; border-radius:4px; padding:1px 6px; font-size:0.85em; }
+
+  .page-label {
+    position:absolute; bottom:0.5em; right:1em;
+    font-size:0.55em; color:#aaa;
+  }
+</style>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+
+
+<!-- ========== 1. タイトル ========== -->
+<section data-background-color="#1a4a6e">
+  <h1 style="font-size:1.7em; color:#fff; margin-bottom:0.25em; line-height:1.3;">
+    万博サンゴ研究<br>月次進捗報告
+  </h1>
+  <p style="color:#a8c8e8; font-size:0.95em; margin-bottom:1.4em;">
+    2026年6月25日 ／ Innoqua CBO 竹内
+  </p>
+  <div style="background:#0d2a45; border-radius:10px; padding:1em 2em;
+              display:inline-block; text-align:left; font-size:0.75em; color:#cde; line-height:1.8;">
+    <div><span style="color:#7ec8e3; font-weight:bold;">対象種</span> ／ クサビライシ科サンゴ（Galaxea fascicularis）</div>
+    <div><span style="color:#7ec8e3; font-weight:bold;">データ</span> ／ EXPO 2025 市民科学 ― 117動画・9個体</div>
+    <div><span style="color:#7ec8e3; font-weight:bold;">前回MTG</span> ／ 2026年5月15日</div>
+  </div>
+</section>
+
+
+<!-- ========== 2. 目次 ========== -->
+<section>
+  <h2>目次</h2>
+  <table class="mtg-table" style="margin-top:0.5em;">
+    <tr><th style="width:2em; text-align:center;">#</th><th>内容</th></tr>
+    <tr><td style="text-align:center; font-weight:bold; color:#1a4a6e;">1</td>
+        <td>この1ヶ月のサマリー</td></tr>
+    <tr><td style="text-align:center; font-weight:bold; color:#2e8b57;">2</td>
+        <td>宿題①回答 ― 投稿先の選定</td></tr>
+    <tr><td style="text-align:center; font-weight:bold; color:#2e8b57;">3</td>
+        <td>宿題②③回答 ― 論文骨子・図の構成</td></tr>
+    <tr><td style="text-align:center; font-weight:bold; color:#1a7abf;">4</td>
+        <td>追加解析のまとめ（この1ヶ月）</td></tr>
+    <tr><td style="text-align:center; font-weight:bold; color:#1a7abf;">5</td>
+        <td>論文に書けること ― 正直な棚卸し</td></tr>
+    <tr><td style="text-align:center; font-weight:bold; color:#e07830;">6</td>
+        <td>現時点での限界と残課題</td></tr>
+    <tr><td style="text-align:center; font-weight:bold; color:#1a4a6e;">7</td>
+        <td>今後のスケジュール</td></tr>
+    <tr><td style="text-align:center; font-weight:bold; color:#1a4a6e;">8</td>
+        <td>相談・質問事項</td></tr>
+  </table>
+</section>
+
+
+<!-- ========== 3. この1ヶ月のサマリー ========== -->
+<section>
+  <h2>この1ヶ月のサマリー</h2>
+  <table class="mtg-table" style="margin-top:0.5em;">
+    <tr><th>カテゴリ</th><th>内容</th><th style="width:4em;">状況</th></tr>
+    <tr>
+      <td><strong>解析完了</strong></td>
+      <td>全117動画の3Dトラジェクトリ可視化（個体別×傾き別18ファイル）</td>
+      <td><span class="tag-ok">完了</span></td>
+    </tr>
+    <tr>
+      <td><strong>解析完了</strong></td>
+      <td>物理量（重さ・表面積・応力）× 速度/移動距離 相関分析</td>
+      <td><span class="tag-ok">完了</span></td>
+    </tr>
+    <tr>
+      <td><strong>解析完了</strong></td>
+      <td>速度ヒートマップの空間統計検証（Moran's I・前半/後半分割）</td>
+      <td><span class="tag-warn">限界あり</span></td>
+    </tr>
+    <tr>
+      <td><strong>解析完了</strong></td>
+      <td>パイプライン精度検証（検出率・ジャンプ除去率）</td>
+      <td><span class="tag-ok">完了</span></td>
+    </tr>
+    <tr>
+      <td><strong>論文方針</strong></td>
+      <td>ターゲットジャーナル特定：People and Nature（BES）</td>
+      <td><span class="tag-ok">確定</span></td>
+    </tr>
+    <tr>
+      <td><strong>課題</strong></td>
+      <td>正の知見の統計的裏付けが未完（個体間差・0°/90°差の検定）</td>
+      <td><span class="tag-desc">残課題</span></td>
+    </tr>
+  </table>
+</section>
+
+
+<!-- ========== 4. 宿題①回答：投稿先 ========== -->
+<section>
+  <h2>宿題①回答 ― 投稿先の選定</h2>
+  <p style="font-size:0.65em; color:#888; margin-top:0.1em; margin-bottom:0.6em;">
+    5月15日宿題：「論文投稿先候補を3〜4箇所挙げ、選定理由を明示する」
+  </p>
+  <div class="hw-done">
+    <div class="hw-title">第一候補：People and Nature（BES ／ IF ≈ 7.9）</div>
+    <ul>
+      <li><strong>選定理由①</strong> ― シチズンサイエンスを主手法として評価するジャーナル</li>
+      <li><strong>選定理由②</strong> ― 参加者データ（NPS +57.7・満足度97.4%・態度変容）との親和性が高い</li>
+      <li><strong>選定理由③</strong> ― 否定的結果でも「手法の独自性」で評価される編集方針</li>
+      <li><strong>Accept見込み</strong> ― 35〜45%（IF高め、CSフレーム次第）</li>
+    </ul>
+  </div>
+  <div style="margin-top:0.6em;">
+    <table class="mtg-table">
+      <tr><th>候補誌</th><th>IF</th><th>特徴</th><th>Accept見込み</th></tr>
+      <tr><td>Ecology and Evolution</td><td>4.1</td><td>生態学全般・オープンアクセス・null結果歓迎</td><td>40〜55%</td></tr>
+      <tr><td>Scientific Reports</td><td>4.6</td><td>総合誌・テクニカル結果重視・採択率高め</td><td>45〜55%</td></tr>
+      <tr><td>Frontiers in Marine Science</td><td>4.7</td><td>海洋生物・CS研究歓迎</td><td>45〜55%</td></tr>
+    </table>
+    <p style="font-size:0.62em; color:#555; margin-top:0.5em; text-align:left;">
+      方針：People and Nature へ第一投稿 → リジェクト後は Ecology and Evolution へ
+    </p>
+  </div>
+</section>
+
+
+<!-- ========== 5. 宿題②③回答：論文骨子・図 ========== -->
+<section>
+  <h2>宿題②③回答 ― 論文骨子・図の構成</h2>
+  <p style="font-size:0.65em; color:#888; margin-top:0.1em; margin-bottom:0.5em;">
+    5月15日宿題：「参考文献の整備」「図の配置と順序の検討」
+  </p>
+
+  <div class="hw-done" style="margin-bottom:0.5em;">
+    <div class="hw-title">論文骨子（現時点案）</div>
+    <ul>
+      <li><strong>タイトル想定</strong> ― <em>Citizen science reveals spatial heterogeneity in ciliary food transport in fungiid coral, with no effect of food physical properties</em></li>
+      <li><strong>独自性3本柱</strong> ― ①シチズンサイエンスによる大規模観察（117動画）／②繊毛輸送速度の定量化（従来は定性のみ）／③物理量が速度を規定しないという否定的知見</li>
+    </ul>
+  </div>
+
+  <table class="mtg-table">
+    <tr><th>図番号</th><th>内容</th><th>目的</th></tr>
+    <tr><td>Fig.1</td><td>実験設定（0°/90°・食物A/B/C・計測系）</td><td>手法説明</td></tr>
+    <tr><td>Fig.2</td><td>代表的3Dトラジェクトリ＋速度プロファイル</td><td>手法の可視性・インパクト</td></tr>
+    <tr><td>Fig.3</td><td>速度ヒートマップ（個体×食物群）</td><td>空間不均一性の視覚的提示</td></tr>
+    <tr><td>Fig.4</td><td>物理量×総移動距離 散布図（0°/90°別）</td><td>null resultの証拠</td></tr>
+    <tr><td>Fig.5</td><td>シチズンサイエンス参加者データ（NPS等）</td><td>CS手法の有効性</td></tr>
+  </table>
+  <p style="font-size:0.6em; color:#888; text-align:left; margin-top:0.4em;">
+    ※ 参考文献整備：上田先生と先行研究を再整理中。ciliary transport + coral feeding の先行研究に空白 → 新規性の裏付けとなる見込み
+  </p>
+</section>
+
+
+<!-- ========== 6. 追加解析まとめ ========== -->
+<section>
+  <h2>追加解析のまとめ（この1ヶ月）</h2>
+  <table class="mtg-table" style="margin-top:0.4em;">
+    <tr><th>解析</th><th>主な結果</th><th style="width:5em;">有意差</th></tr>
+    <tr>
+      <td><strong>①3Dトラジェクトリ可視化</strong><br>
+          <span style="font-size:0.88em; color:#666;">全117動画、個体別×傾き別18ファイル</span></td>
+      <td>検出率 平均96.3%・ジャンプ除去率 &lt;0.1%<br>
+          パイプライン精度を確認</td>
+      <td style="text-align:center;"><span class="tag-desc">記述</span></td>
+    </tr>
+    <tr>
+      <td><strong>②物理量×総移動距離</strong><br>
+          <span style="font-size:0.88em; color:#666;">重さ・表面積・応力 × 0°/90°別</span></td>
+      <td>Spearman・Pearson ともに n.s.<br>
+          表面積×90°のみ Spearman ★ だが r²=0.8%（外れ値 artifact と判断）</td>
+      <td style="text-align:center;"><span class="tag-null">n.s.</span></td>
+    </tr>
+    <tr>
+      <td><strong>③速度ヒートマップ</strong><br>
+          <span style="font-size:0.88em; color:#666;">個体×食物群×傾き</span></td>
+      <td>個体ごとに高速・低速ゾーンの空間パターンあり（視覚的）<br>
+          統計的検証は限界あり（後述）</td>
+      <td style="text-align:center;"><span class="tag-desc">視覚のみ</span></td>
+    </tr>
+    <tr>
+      <td><strong>④空間統計検証</strong><br>
+          <span style="font-size:0.88em; color:#666;">Moran's I・前半/後半分割</span></td>
+      <td>Moran's I : 全個体 I&gt;0.78 だが軌跡連続性で膨張 → 参考値<br>
+          前半/後半分割 : 置き位置・個体上下が非統一 → 解釈不可</td>
+      <td style="text-align:center;"><span class="tag-warn">無効</span></td>
+    </tr>
+  </table>
+</section>
+
+
+<!-- ========== 7. 論文に書けること（正直な棚卸し） ========== -->
+<section>
+  <h2>論文に書けること ― 正直な棚卸し</h2>
+
+  <div class="confirmed" style="margin-bottom:0.5em;">
+    <div class="confirmed-title">統計的に確認済み（論文に書ける）</div>
+    <table style="width:100%; border-collapse:collapse; font-size:0.95em;">
+      <tr>
+        <td style="padding:0.3em 0.5em; border-bottom:1px solid #cde; width:55%;">
+          物理量（重さ・表面積・応力）は摂餌輸送速度を<strong>予測しない</strong>
+        </td>
+        <td style="padding:0.3em 0.5em; border-bottom:1px solid #cde;">
+          Spearman + Pearson 両方 n.s. ／ 0°・90°とも
+        </td>
+      </tr>
+      <tr>
+        <td style="padding:0.3em 0.5em;">
+          表面形態（高さ・傾斜）も速度と<strong>無相関</strong>
+        </td>
+        <td style="padding:0.3em 0.5em;">
+          全ρ &lt; 0.10、n.s.
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="caution" style="margin-bottom:0.5em;">
+    <div class="caution-title">記述・視覚のみ（現状は統計的裏付けなし）</div>
+    <ul>
+      <li>速度に<strong>空間的不均一性がある</strong>（ヒートマップで視覚的に示せる。ただし統計検証が無効と判明）</li>
+      <li><strong>個体間で速度に差がある</strong>（視覚的には明らか。Kruskal-Wallis 検定を未実施）</li>
+      <li><strong>0° vs 90° で速度分布が異なる</strong>（視覚的。Mann-Whitney 検定を未実施）</li>
+    </ul>
+  </div>
+
+  <div class="invalid">
+    ⚠️ <strong>検定したが無効と判断</strong>：Moran's I（軌跡連続性で膨張）・前半/後半分割再現性（置き位置・個体上下が非統一）
+  </div>
+</section>
+
+
+<!-- ========== 8. 現時点の限界と残課題 ========== -->
+<section>
+  <h2>現時点の限界と残課題</h2>
+
+  <div class="caution" style="margin-bottom:0.6em;">
+    <div class="caution-title">限界：正の知見の統計的裏付けが未完</div>
+    <p style="margin:0.2em 0 0.4em;">
+      空間的不均一性・個体間差・0°/90°差は<strong>視覚的には明らか</strong>だが、
+      現時点では統計的に証明できていない。<br>
+      これらを論文の「主張」として書くには追加検定が必要。
+    </p>
+    <table style="width:100%; border-collapse:collapse; font-size:0.95em;">
+      <tr style="background:#fde8d0;">
+        <td style="padding:0.3em 0.6em; border-bottom:1px solid #f0c8a0; font-weight:bold;">残課題</td>
+        <td style="padding:0.3em 0.6em; border-bottom:1px solid #f0c8a0;">必要な検定</td>
+        <td style="padding:0.3em 0.6em; border-bottom:1px solid #f0c8a0; width:5em;">工数</td>
+      </tr>
+      <tr>
+        <td style="padding:0.3em 0.6em; border-bottom:1px solid #eee;">個体間の速度差</td>
+        <td style="padding:0.3em 0.6em; border-bottom:1px solid #eee;">Kruskal-Wallis 検定</td>
+        <td style="padding:0.3em 0.6em; border-bottom:1px solid #eee; text-align:center;">小</td>
+      </tr>
+      <tr>
+        <td style="padding:0.3em 0.6em;">0° vs 90° の速度差</td>
+        <td style="padding:0.3em 0.6em;">Mann-Whitney U 検定（個体ごと）</td>
+        <td style="padding:0.3em 0.6em; text-align:center;">小</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="confirmed">
+    <div class="confirmed-title">現状でも成立する論文の軸</div>
+    <ul>
+      <li>「物理量は速度を予測しない」というnull resultは既に統計的に確認済み</li>
+      <li>シチズンサイエンス手法による大規模データ取得の実証</li>
+      <li>上の2本の追加検定を済ませれば、正の知見も加えられる</li>
+    </ul>
+  </div>
+</section>
+
+
+<!-- ========== 9. スケジュール ========== -->
+<section>
+  <h2>今後のスケジュール</h2>
+  <table class="mtg-table" style="margin-top:0.4em;">
+    <tr><th style="width:8em;">時期</th><th>タスク</th><th style="width:5em;">状態</th></tr>
+    <tr>
+      <td><strong>6月末まで</strong></td>
+      <td>追加検定2本（Kruskal-Wallis・Mann-Whitney）実施</td>
+      <td><span class="tag-desc">残タスク</span></td>
+    </tr>
+    <tr>
+      <td><strong>6月末まで</strong></td>
+      <td>論文イントロ・手法セクション執筆開始</td>
+      <td><span class="tag-desc">残タスク</span></td>
+    </tr>
+    <tr>
+      <td><strong>7月</strong></td>
+      <td>全セクション執筆、図の最終化、参考文献整備</td>
+      <td><span class="tag-warn">未着手</span></td>
+    </tr>
+    <tr>
+      <td><strong>7月末</strong></td>
+      <td>上田先生レビュー</td>
+      <td><span class="tag-warn">未着手</span></td>
+    </tr>
+    <tr>
+      <td><strong>8月上旬</strong></td>
+      <td>People and Nature へ投稿 🎯</td>
+      <td><span class="tag-warn">目標</span></td>
+    </tr>
+  </table>
+  <div style="margin-top:0.8em; background:#e8f4fd; border-radius:8px; padding:0.6em 1em;
+              font-size:0.68em; text-align:left; color:#1a4a6e;">
+    <strong>前回MTGからの宿題（5月15日）のうち未完了：</strong><br>
+    「面白ストーリー・ピンとキャラクターを書く」→ 執筆開始できていない。今月中に着手予定。
+  </div>
+</section>
+
+
+<!-- ========== 10. 相談・質問事項 ========== -->
+<section data-background-color="#1a4a6e">
+  <h2 style="color:#fff;">相談・質問事項</h2>
+  <div style="text-align:left; max-width:800px; margin:0.6em auto 0;">
+    <div style="background:#0d2a45; border-radius:8px; padding:0.8em 1.2em;
+                font-size:0.75em; color:#cde; line-height:1.9; margin-bottom:0.6em;">
+      <p style="color:#7ec8e3; font-weight:bold; margin:0 0 0.3em;">① 論文ストーリーのフック</p>
+      <p style="margin:0;">
+        「サンゴが海のゴミ箱として機能している可能性」など社会的フックをイントロにどう組み込むか。
+        CSフレームとの組み合わせ方についてご意見ほしい。
+      </p>
+    </div>
+    <div style="background:#0d2a45; border-radius:8px; padding:0.8em 1.2em;
+                font-size:0.75em; color:#cde; line-height:1.9; margin-bottom:0.6em;">
+      <p style="color:#7ec8e3; font-weight:bold; margin:0 0 0.3em;">② null result の価値付け</p>
+      <p style="margin:0;">
+        「物理量が速度を規定しない」という否定的結果を、
+        People and Nature の査読者に対してどう価値として伝えるか。フレーミングのアドバイスがほしい。
+      </p>
+    </div>
+    <div style="background:#0d2a45; border-radius:8px; padding:0.8em 1.2em;
+                font-size:0.75em; color:#cde; line-height:1.9;">
+      <p style="color:#7ec8e3; font-weight:bold; margin:0 0 0.3em;">③ 著者・謝辞</p>
+      <p style="margin:0;">
+        シチズンサイエンス参加者の謝辞への記載方法。上田先生・共著者の想定について確認したい。
+      </p>
+    </div>
+  </div>
+</section>
+
+
+</div><!-- /slides -->
+</div><!-- /reveal -->
+
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.js"></script>
+<script>
+Reveal.initialize({
+  hash: true,
+  slideNumber: 'c/t',
+  transition: 'slide',
+  transitionSpeed: 'fast',
+  center: true,
+  width: 1100,
+  height: 700,
+  margin: 0.04,
+});
+</script>
+</body>
+</html>
